@@ -11,5 +11,32 @@
         <Entry x:Name="Altura" Keyboard="Numeric" Placeholder="Informe a sua Altura" FontSize="30"/>
         <Button x:Name="calcular" Text="Calcular" BackgroundColor="#2196F3" TextColor="White" FontSize="25" HorizontalOptions="Center" CornerRadius="30"
             Clicked="calcular_Clicked"/>
+
+        <Grid RowDefinitions="75, 50, 50, 50, 50, 50, 50" ColumnDefinitions="*, *">
+            <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="#07b4f5">
+                <Label Text="Classificação" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
+            <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="#07b4f5">
+                <Label Text="IMC" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
+
+            <Label Text="Abaixo do Peso" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" FontSize="20" BackgroundColor="#ffffff"/>
+            <Label Text="Abaixo de 18,5" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" FontSize="20" BackgroundColor="#ffffff"/>
+
+            <Label Text="Peso Normal" Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" FontSize="20" BackgroundColor="#ffffff"/>
+            <Label Text="18,5 - 24,9" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" FontSize="20" BackgroundColor="#ffffff"/>
+
+            <Label Text="Acima do Peso" Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" FontSize="20" BackgroundColor="#ffffff"/>
+            <Label Text="25 - 29,9" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" FontSize="20" BackgroundColor="#ffffff"/>
+            
+            <Label Text="Obesidade Grau I" Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" FontSize="20" BackgroundColor="#ffffff"/>
+            <Label Text="30 - 34,9" Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" FontSize="20" BackgroundColor="#ffffff"/>
+
+            <Label Text="Obesidade Grau II" Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" FontSize="20" BackgroundColor="#ffffff"/>
+            <Label Text="35 - 39,9" Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" FontSize="20" BackgroundColor="#ffffff"/>
+
+            <Label Text="Obesidade Grau III" Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" FontSize="20" BackgroundColor="#ffffff"/>
+            <Label Text="Maior ou igual a 40" Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" FontSize="20" BackgroundColor="#ffffff"/>
+        </Grid>
     </StackLayout>
 </ContentPage>

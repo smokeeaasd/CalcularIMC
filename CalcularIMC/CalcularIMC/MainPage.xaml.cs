@@ -23,7 +23,6 @@ namespace CalcularIMC
             Double imc = Math.Round(peso / (altura * altura), 2);
 
             String classeIMC = "";
-
             if (imc < 18.5)
             {
                 classeIMC = "Abaixo do Peso";
