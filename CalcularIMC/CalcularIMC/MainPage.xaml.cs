@@ -48,7 +48,7 @@ namespace CalcularIMC
                 classeIMC = "Obesidade Mórbida";
             }
 
-            DisplayAlert($"Seu imc é de: {imc}.", $"{classeIMC}", "OK");
+            DisplayAlert($"Seu imc é de: {imc}.", $"{classeIMC}.", "OK");
 
             Peso.Text = "";
             Altura.Text = "";
